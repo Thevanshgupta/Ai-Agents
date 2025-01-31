@@ -5,7 +5,7 @@ from phi.tools.yfinance import YFinanceTools
 load_dotenv()
 
 agent=Agent(
-    model=Groq(id="deepseek-r1-distill-llama-70b"),\
+    model=Groq(id="deepseek-r1-distill-llama-70b"),
     tools=[YFinanceTools(stock_price=True, 
                          analyst_recommendations=True
                          )],
